@@ -1,0 +1,16 @@
+# Dependencies
+backend/node_modules/
+frontend/node_modules/
+
+# Database (data lokal)
+backend/data/
+
+# Environment (jangan pernah di-push!)
+backend/.env
+
+# Build output
+frontend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
