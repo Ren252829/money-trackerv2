@@ -1,7 +1,13 @@
 import axios from 'axios';
 
+// Di production (Vercel), panggil langsung ke backend Railway
+// Di development (localhost), pakai proxy Vite
+const BASE_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : '/api';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: BASE_URL,
   timeout: 10000,
 });
 
@@ -15,11 +21,9 @@ api.interceptors.response.use(
 
 export default api;
 
-// Format Rupiah
 export const formatRp = (amount) =>
   new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount || 0);
 
-// Format tanggal Indonesia
 export const formatDate = (dateStr) => {
   if (!dateStr) return '-';
   return new Date(dateStr + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
