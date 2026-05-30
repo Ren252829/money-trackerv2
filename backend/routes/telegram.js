@@ -227,7 +227,23 @@ function initBot() {
     return saveTransaction(ctx, session, '');
   });
 
-  bot.launch({ dropPendingUpdates: true });
+  bot.launch({
+    dropPendingUpdates: true,
+    allowedUpdates: ['message', 'callback_query'],
+  }).catch(err => {
+    // 409 = instance lain masih jalan, tunggu sebentar lalu retry
+    if (err.response?.error_code === 409) {
+      console.warn('⚠️  Bot conflict (409), retry dalam 5 detik...');
+      setTimeout(() => {
+        bot.launch({
+          dropPendingUpdates: true,
+          allowedUpdates: ['message', 'callback_query'],
+        }).catch(e => console.error('Bot launch gagal:', e.message));
+      }, 5000);
+    } else {
+      console.error('Bot launch error:', err.message);
+    }
+  });
   console.log('✅ Telegram bot aktif (long polling)');
   return bot;
 }
@@ -285,7 +301,10 @@ async function saveTransaction(ctx, session, rawDesc) {
 }
 
 function stopBot() {
-  if (bot) bot.stop('SIGTERM');
+  if (bot) {
+    bot.stop('SIGTERM');
+    bot = null;
+  }
 }
 
 module.exports = { initBot, stopBot };
