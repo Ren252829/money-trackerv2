@@ -1,0 +1,512 @@
+{
+  "exported_at": "2026-05-31T11:31:16.472Z",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Makan & Minum",
+      "icon": "🍽️",
+      "type": "pengeluaran",
+      "color": "#f97316",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 2,
+      "name": "Transportasi",
+      "icon": "🚗",
+      "type": "pengeluaran",
+      "color": "#3b82f6",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 3,
+      "name": "Belanja",
+      "icon": "🛍️",
+      "type": "pengeluaran",
+      "color": "#ec4899",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 4,
+      "name": "Kesehatan",
+      "icon": "🏥",
+      "type": "pengeluaran",
+      "color": "#ef4444",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 5,
+      "name": "Hiburan",
+      "icon": "🎮",
+      "type": "pengeluaran",
+      "color": "#8b5cf6",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 6,
+      "name": "Tagihan",
+      "icon": "💡",
+      "type": "pengeluaran",
+      "color": "#eab308",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 7,
+      "name": "Pendidikan",
+      "icon": "📚",
+      "type": "pengeluaran",
+      "color": "#06b6d4",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 8,
+      "name": "Lainnya",
+      "icon": "📦",
+      "type": "pengeluaran",
+      "color": "#6b7280",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 9,
+      "name": "Gaji",
+      "icon": "💼",
+      "type": "pemasukan",
+      "color": "#10b981",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 10,
+      "name": "Freelance",
+      "icon": "💻",
+      "type": "pemasukan",
+      "color": "#14b8a6",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 12,
+      "name": "Bonus",
+      "icon": "🎁",
+      "type": "pemasukan",
+      "color": "#84cc16",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 13,
+      "name": "Lainnya (Masuk)",
+      "icon": "💵",
+      "type": "pemasukan",
+      "color": "#a3e635",
+      "created_at": "2026-05-25 02:10:13"
+    },
+    {
+      "id": 14,
+      "name": "Investasi",
+      "icon": "💵",
+      "type": "pengeluaran",
+      "color": "#00ff00",
+      "created_at": "2026-05-25 04:06:17"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "38c0d00b-d6ef-4e97-9a8c-d664f88100d9",
+      "amount": 63177,
+      "type": "pemasukan",
+      "category_id": 12,
+      "description": "sisa dari bulan kemarin",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 02:13:46",
+      "source": "web"
+    },
+    {
+      "id": "27073399-8c26-4035-8cc2-025704ed4a25",
+      "amount": 3000000,
+      "type": "pemasukan",
+      "category_id": 9,
+      "description": "Tf babah",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 03:52:11",
+      "source": "telegram"
+    },
+    {
+      "id": "5a82a1ff-1574-4c6f-bde5-03341c6d7a1d",
+      "amount": 1048084,
+      "type": "pengeluaran",
+      "category_id": 6,
+      "description": "Gopay Later",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 03:55:28",
+      "source": "web"
+    },
+    {
+      "id": "89426457-8d9e-4109-964a-fd16044aded4",
+      "amount": 2500,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "admin tf",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 03:57:01",
+      "source": "web"
+    },
+    {
+      "id": "ecf29bd7-717e-4649-82f8-eba3716e1813",
+      "amount": 238000,
+      "type": "pengeluaran",
+      "category_id": 14,
+      "description": "BNI-AM Indeks IDX30",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 04:06:46",
+      "source": "web"
+    },
+    {
+      "id": "4f2a728c-a1eb-453a-a992-0697c57c3369",
+      "amount": 102000,
+      "type": "pengeluaran",
+      "category_id": 14,
+      "description": "Bahana Likuid Plus",
+      "date": "2026-05-25",
+      "created_at": "2026-05-25 04:07:15",
+      "source": "web"
+    },
+    {
+      "id": "f8143d16-1cb2-4853-a5d9-75e9ab307e21",
+      "amount": 11200,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Es Krim",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:37:05",
+      "source": "web"
+    },
+    {
+      "id": "63a64379-3a98-4623-afdb-d9e96c9d5b57",
+      "amount": 13700,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Ciptadent",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:38:14",
+      "source": "web"
+    },
+    {
+      "id": "78c7c42b-57dc-43b2-b430-ed0265b3ccd9",
+      "amount": 51900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Moisturizer",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:40:21",
+      "source": "web"
+    },
+    {
+      "id": "eb1e4ab4-c86c-473a-b716-2fca773e8b36",
+      "amount": 10900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Masker",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:40:56",
+      "source": "web"
+    },
+    {
+      "id": "7744c68c-9aa2-4e92-86ab-22cda2a8a245",
+      "amount": 18000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Ayam Bakar",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:42:25",
+      "source": "web"
+    },
+    {
+      "id": "09da9093-76be-4158-a981-501fdd307a53",
+      "amount": 18000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Es Kelapa",
+      "date": "2026-05-25",
+      "created_at": "2026-05-26 07:43:00",
+      "source": "web"
+    },
+    {
+      "id": "3498aee1-b276-4c4b-9449-d47e1668201a",
+      "amount": 32000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Coto Makasar",
+      "date": "2026-05-26",
+      "created_at": "2026-05-26 07:43:36",
+      "source": "web"
+    },
+    {
+      "id": "8fe2c8e2-8885-4657-aabd-7c30cc2ced8a",
+      "amount": 8900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Permen Mint",
+      "date": "2026-05-26",
+      "created_at": "2026-05-26 07:44:38",
+      "source": "web"
+    },
+    {
+      "id": "99ab683d-80e4-479b-9205-bba8cc7de577",
+      "amount": 15000,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Es Krim",
+      "date": "2026-05-26",
+      "created_at": "2026-05-26 07:45:22",
+      "source": "web"
+    },
+    {
+      "id": "7139560b-df11-4965-ae9c-9bbb20a42b2b",
+      "amount": 55000,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "Ganti Antigores",
+      "date": "2026-05-26",
+      "created_at": "2026-05-28 12:37:43",
+      "source": "telegram"
+    },
+    {
+      "id": "02a994a0-af86-4e5e-bc68-ddddb8b6172d",
+      "amount": 15000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Es Jeruk Sunkist",
+      "date": "2026-05-26",
+      "created_at": "2026-05-28 12:45:33",
+      "source": "web"
+    },
+    {
+      "id": "1b4b39d8-6f2f-4ad2-9877-c28c9fc34143",
+      "amount": 17000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Pisang Keju",
+      "date": "2026-05-26",
+      "created_at": "2026-05-28 12:46:05",
+      "source": "web"
+    },
+    {
+      "id": "525bddda-e116-4471-ac32-6b3d8ebfea96",
+      "amount": 15000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Ayam Ganja+EsTeh",
+      "date": "2026-05-27",
+      "created_at": "2026-05-28 12:46:54",
+      "source": "web"
+    },
+    {
+      "id": "9549a46b-3940-4c90-a770-c4a1db3e4499",
+      "amount": 2000,
+      "type": "pengeluaran",
+      "category_id": 2,
+      "description": "parkir gojek",
+      "date": "2026-05-27",
+      "created_at": "2026-05-28 15:05:28",
+      "source": "web"
+    },
+    {
+      "id": "bd906ec4-eb9b-4631-a432-704589b3b28d",
+      "amount": 15000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Ayam Ganja+EsTeh",
+      "date": "2026-05-28",
+      "created_at": "2026-05-28 12:47:33",
+      "source": "web"
+    },
+    {
+      "id": "60807ee9-c134-46ba-bba3-07a05440c20b",
+      "amount": 19000,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "MBS",
+      "date": "2026-05-28",
+      "created_at": "2026-05-28 12:48:00",
+      "source": "web"
+    },
+    {
+      "id": "d8358db9-7d78-4ed8-8930-13dcece453e0",
+      "amount": 23000,
+      "type": "pengeluaran",
+      "category_id": 1,
+      "description": "Milo Dinosaurus",
+      "date": "2026-05-28",
+      "created_at": "2026-05-28 12:48:30",
+      "source": "web"
+    },
+    {
+      "id": "9ece3dbf-58ed-4a65-bd44-051e3ae2d5c4",
+      "amount": 2000,
+      "type": "pengeluaran",
+      "category_id": 2,
+      "description": "parkir",
+      "date": "2026-05-28",
+      "created_at": "2026-05-28 15:05:52",
+      "source": "web"
+    },
+    {
+      "id": "9f341195-6f52-4c8d-b265-e79192ec1999",
+      "amount": 8500,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Pop Corn",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 12:57:36",
+      "source": "web"
+    },
+    {
+      "id": "7886cd9b-e411-450a-a618-79ac315b73a1",
+      "amount": 9900,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "Kapas Muka",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 12:58:21",
+      "source": "web"
+    },
+    {
+      "id": "82473689-e45a-4c34-ac6e-c3f81ea4e17d",
+      "amount": 7900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Uc 100",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 13:00:00",
+      "source": "web"
+    },
+    {
+      "id": "ee8591aa-4d77-45e3-8299-dd58eef7efb2",
+      "amount": 14900,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "Tisu",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 13:00:31",
+      "source": "web"
+    },
+    {
+      "id": "208bc23a-b605-4184-94c8-673f50494714",
+      "amount": 5500,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Es Krim",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 13:01:04",
+      "source": "web"
+    },
+    {
+      "id": "ae8f9d22-f453-4c5c-8e60-24f4611969db",
+      "amount": 17800,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Es Krim",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 15:38:53",
+      "source": "web"
+    },
+    {
+      "id": "884b0566-b4bc-46de-8253-eca0d60f0313",
+      "amount": 7900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "u c orange",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 15:39:18",
+      "source": "web"
+    },
+    {
+      "id": "d43ab35e-1b6c-4623-8bbe-eae917835a05",
+      "amount": 10200,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Nabati",
+      "date": "2026-05-29",
+      "created_at": "2026-05-29 15:39:49",
+      "source": "web"
+    },
+    {
+      "id": "59eea35c-b2f7-445c-a0f5-b45fa5b8ce32",
+      "amount": 17500,
+      "type": "pengeluaran",
+      "category_id": 8,
+      "description": "Laundry",
+      "date": "2026-05-30",
+      "created_at": "2026-05-30 01:13:36",
+      "source": "web"
+    },
+    {
+      "id": "233dd656-b23d-462f-942a-d237925613e1",
+      "amount": 21900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Alfamart Roti & Kopi",
+      "date": "2026-05-30",
+      "created_at": "2026-05-30 01:14:48",
+      "source": "web"
+    },
+    {
+      "id": "3d48b72f-e964-4554-8d85-b7d9843ea607",
+      "amount": 235380,
+      "type": "pengeluaran",
+      "category_id": 4,
+      "description": "Kacamata",
+      "date": "2026-05-30",
+      "created_at": "2026-05-30 14:53:57",
+      "source": "web"
+    },
+    {
+      "id": "f44a9317-b1b6-4b37-975d-7d31efce6e3d",
+      "amount": 9900,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Nabati",
+      "date": "2026-05-31",
+      "created_at": "2026-05-31 06:35:22",
+      "source": "web"
+    },
+    {
+      "id": "864451c8-1f44-463f-8721-229da3049e68",
+      "amount": 38700,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Sampoerna Merah",
+      "date": "2026-05-31",
+      "created_at": "2026-05-31 06:36:02",
+      "source": "web"
+    },
+    {
+      "id": "132536af-1ed9-4e08-855d-d068d1006509",
+      "amount": 95000,
+      "type": "pengeluaran",
+      "category_id": 2,
+      "description": "Ganti Oli Mesin & Garda",
+      "date": "2026-05-31",
+      "created_at": "2026-05-31 06:36:33",
+      "source": "web"
+    },
+    {
+      "id": "6cf92714-7c52-46d2-9bc9-a2543c66f9f0",
+      "amount": 17000,
+      "type": "pengeluaran",
+      "category_id": 3,
+      "description": "Americano Kopi Kenangan",
+      "date": "2026-05-31",
+      "created_at": "2026-05-31 06:37:00",
+      "source": "web"
+    },
+    {
+      "id": "d9fa2ea2-fa38-4352-8fb2-a38a10480901",
+      "amount": 2000,
+      "type": "pengeluaran",
+      "category_id": 2,
+      "description": "Parkir",
+      "date": "2026-05-31",
+      "created_at": "2026-05-31 06:37:26",
+      "source": "web"
+    }
+  ],
+  "budgets": []
+}
