@@ -10,14 +10,30 @@ const HOST = '0.0.0.0';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// CORS - izinkan Vercel + localhost
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:3000',
-    process.env.FRONTEND_URL,
-  ].filter(Boolean),
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true); // curl/Postman/mobile
+    const allowed = [
+      'http://localhost:5173',
+      'http://localhost:3000',
+      process.env.FRONTEND_URL,
+    ].filter(Boolean);
+    // Izinkan semua *.vercel.app
+    if (allowed.includes(origin) || origin.endsWith('.vercel.app')) {
+      return callback(null, true);
+    }
+    console.warn('CORS blocked origin:', origin);
+    callback(null, true); // tetap izinkan tapi log
+  },
   credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
+// Handle preflight OPTIONS
+app.options('*', cors());
 
 initDB().then(() => {
   app.use('/api/transactions', require('./routes/transactions'));
@@ -28,9 +44,9 @@ initDB().then(() => {
   app.get('/api/health', (req, res) =>
     res.json({ status: 'ok', timestamp: new Date().toISOString(), version: '1.0.0' })
   );
-
-  // Koyeb health check endpoint
-  app.get('/', (req, res) => res.json({ status: 'Money Tracker API is running' }));
+  app.get('/', (req, res) =>
+    res.json({ status: 'Money Tracker API is running' })
+  );
 
   initBot();
 
